@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title id="page-title">Construtor de Questões</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Mono:wght@400;500&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=Nunito:wght@300;400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Embedded Data -->
+  <script id="embedded-data" type="application/json">
+    {"title":"Matéria","subtitle":"Banco de Questões","library":[]}
+  </script>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/tablet.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ════ MUSIC PLAYER BAR ════ -->
+  <div class="music-bar" id="music-bar">
+    <span class="mbar-icon">♫</span>
+    <button class="mbar-btn" onclick="mbarPrev()" title="Faixa anterior">⏮</button>
+    <button class="mbar-btn" id="mbar-play" onclick="mbarTogglePlay()" title="Play / Pause">▶</button>
+    <button class="mbar-btn" onclick="mbarNext()" title="Próxima faixa">⏭</button>
+    <span class="mbar-track"><span class="mbar-track-inner" id="mbar-track-inner">1/4 · Lofi Chill Rain</span></span>
+    <button class="mbar-btn" id="mbar-mute" onclick="mbarToggleMute()" title="Mudo / Desmutar">🔊</button>
+    <input class="mbar-vol" id="mbar-vol" type="range" min="0" max="1" step="0.02" value="0.35" oninput="mbarSetVol(this.value)" title="Volume" />
+    <span class="mbar-time" id="mbar-time">0:00</span>
+    <span id="mbar-chrono-mob" class="mbar-chrono-mob">00:00:00</span>
+    <div class="mbar-progress-wrap" onclick="mbarSeek(event)" title="Clique para avançar">
+      <div class="mbar-progress-fill" id="mbar-prog"></div>
+    </div>
+    <button id="theme-floating-btn" onclick="openThemePanelOrb()" title="Trocar tema" style="margin-left:auto;">
+      <span class="tf-icon">✦</span>
+      <div class="orb-ripple"></div>
+    </button>
+  </div>
+
+  <!-- Content will be injected by JavaScript -->
+  <div class="wrap" id="app"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/state.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/notifications.js"></script>
+  <script src="js/ui-utils.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/parser.js"></script>
+  <script src="js/question-editor.js"></script>
+  <script src="js/library.js"></script>
+  <script src="js/quiz-engine.js"></script>
+  <script src="js/music-player.js"></script>
+  <script src="js/chronometer.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

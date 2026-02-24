@@ -1,0 +1,127 @@
+/* ════════════════════════════════════════════════════════
+   Mobile Styles - max-width: 600px
+   Touch-friendly interface for smartphones
+   ════════════════════════════════════════════════════════ */
+
+@media (max-width: 600px) {
+
+  /* ──── Music Bar Mobile ──── */
+  .music-bar {
+    height: 54px;
+    padding: 0 12px;
+  }
+
+  .mbar-icon {
+    display: none;
+  }
+
+  .mbar-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+    margin: 0 4px;
+  }
+
+  .mbar-track {
+    display: none;
+  }
+
+  .mbar-vol {
+    display: none;
+  }
+
+  .mbar-time {
+    display: none;
+  }
+
+  .mbar-progress-wrap {
+    flex: 1;
+    height: 2px;
+    margin: 0 8px;
+  }
+
+  .mbar-chrono-mob {
+    display: block !important;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 50px;
+    text-align: center;
+  }
+
+  #theme-floating-btn {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 18px;
+  }
+
+  /* ──── Layout ──── */
+  body {
+    padding-top: 54px;
+  }
+
+  .wrap {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* ──── Header ──── */
+  .header {
+    padding: 12px 16px !important;
+    margin-top: 0 !important;
+  }
+
+  .header-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .header-subtitle {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  .edit-title-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .deco-line {
+    margin: 6px 0;
+  }
+
+  /* ──── Content ──── */
+  .content-area {
+    padding-bottom: 60px;
+    padding-top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* ──── Buttons ──── */
+  .btn {
+    padding: 10px 14px;
+    font-size: 13px;
+    min-height: 38px;
+    border-radius: 6px;
+  }
+
+  .btn-small {
+    padding: 8px 12px;
+    font-size: 12px;
+    min-height: 32px;
+  }
+
+  /* ──── Modal ──── */
+  .modal-content {
+    width: 95%;
+    max-height: 85vh;
+    border-radius: 12px;
+  }
+
+  /* ──── Hide elements on mobile ──── */
+  .desktop-only {
+    display: none !important;
+  }
+}

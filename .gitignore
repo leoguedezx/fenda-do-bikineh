@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+npm-debug.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local storage
+*.ldb
+*.bak
+
+# Temp files
+*.tmp
+.temp/
+
+# Build outputs
+dist/
+build/
+out/
